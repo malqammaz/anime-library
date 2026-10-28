@@ -13,7 +13,7 @@
     if (!list) throw new Error('الملف يجب أن يحتوي anime أو episodes.');
     return {anime:list.map((a,i) => {
       if (!a || !Array.isArray(a.episodes)) throw new Error(`قائمة الحلقات غير صحيحة في العنصر ${i+1}.`);
-      return {title:String(a.title || a.name || `أنمي ${i+1}`),episodes:a.episodes.map((e,j) => {
+      return {title:String(a.title || a.name || `أنمي ${i+1}`),image:safeUrl(a.image || a.poster || ''),episodes:a.episodes.map((e,j) => {
         if (!e || !Array.isArray(e.links)) throw new Error(`روابط الحلقة ${j+1} غير صحيحة.`);
         return {number:e.number ?? j+1,title:String(e.title || `الحلقة ${e.number ?? j+1}`),links:e.links.map(l => {
           if (!l || typeof l !== 'object') throw new Error('صيغة رابط غير صحيحة.');
@@ -43,7 +43,7 @@
     $('breadcrumbs').replaceChildren();crumb('المكتبة','#');
     if(a){crumb('／');crumb(a.title,`#anime/${ai}`);}if(e){crumb('／');crumb(e.title);}
     const query=$('search').value.trim().toLowerCase();
-    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة':'رابط مشاهدة',url:l.url,badge:l.quality,icon:'↗'})):a?a.episodes.map((ep,i)=>({title:ep.title,meta:`${ep.links.length} روابط`,href:`#anime/${ai}/episode/${i}`,icon:'▤'})):library.anime.map((item,i)=>({title:item.title,meta:`${item.episodes.length} حلقات`,href:`#anime/${i}`,icon:'▰'}));
+    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة':'رابط مشاهدة',url:l.url,badge:l.quality,icon:'↗'})):a?a.episodes.map((ep,i)=>({title:ep.title,meta:`${ep.links.length} روابط`,href:`#anime/${ai}/episode/${i}`,icon:'▤'})):library.anime.map((item,i)=>({title:item.title,image:item.image,meta:`${item.episodes.length} حلقات`,href:`#anime/${i}`,icon:'▰'}));
     const filtered=entries.filter(x=>(x.title+' '+x.meta+' '+(x.badge||'')).toLowerCase().includes(query));
     $('count').textContent=`${filtered.length} عناصر`;$('items').replaceChildren();
     for(const item of filtered){
@@ -51,6 +51,7 @@
       if(item.url){card.target='_blank';card.rel='noopener noreferrer';}
       const add=(tag,cls,text)=>{const el=document.createElement(tag);el.className=cls;el.textContent=text;card.append(el);};
       add('span','icon',item.icon);add('span','arrow','↖');add('h2','',item.title);add('span','meta',item.meta);
+      if(item.image){const img=document.createElement('img');img.className='cover';img.alt=item.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.src=item.image;img.addEventListener('error',()=>{img.remove();card.classList.remove('has-cover');});card.prepend(img);card.classList.add('has-cover');}
       if(item.badge)add('span','badge',item.badge);if(item.url)add('span','url',new URL(item.url).hostname);
       $('items').append(card);
     }

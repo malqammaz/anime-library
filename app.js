@@ -39,7 +39,7 @@
   function render() {
     const {ai,ei}=route(),a=library.anime[ai],e=a?.episodes[ei];
     $('title').textContent=e?.title || a?.title || 'مكتبة الأنمي';
-    $('subtitle').textContent=e?'اختَر السيرفر لفتح رابط الحلقة في نافذة جديدة.':a?'كل الحلقات، مرتّبة في مجلد واحد.':'تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.';
+    $('subtitle').textContent=e?'اختَر السيرفر لفتح رابط الحلقة.':a?'كل الحلقات، مرتّبة في مجلد واحد.':'تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.';
     $('breadcrumbs').replaceChildren();crumb('المكتبة','#');
     if(a){crumb('／');crumb(a.title,`#anime/${ai}`);}if(e){crumb('／');crumb(e.title);}
     const query=$('search').value.trim().toLowerCase();
@@ -48,7 +48,6 @@
     $('count').textContent=`${filtered.length} عناصر`;$('items').replaceChildren();
     for(const item of filtered){
       const card=document.createElement('a');card.className='card';card.href=item.url || item.href;
-      if(item.url){card.target='_blank';card.rel='noopener noreferrer';}
       const add=(tag,cls,text)=>{const el=document.createElement(tag);el.className=cls;el.textContent=text;card.append(el);};
       add('span','icon',item.icon);add('span','arrow','↖');add('h2','',item.title);add('span','meta',item.meta);
       if(item.image){const img=document.createElement('img');img.className='cover';img.alt=item.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.src=item.image;img.addEventListener('error',()=>{img.remove();card.classList.remove('has-cover');});card.prepend(img);card.classList.add('has-cover');}

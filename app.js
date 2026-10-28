@@ -29,15 +29,17 @@
   try { listView = localStorage.getItem('anime-library-list-view') === 'true'; } catch {}
   try { const stored = localStorage.getItem(KEY); if (stored) {library=normalize(JSON.parse(stored));saved=true;} } catch {}
   const notify = text => { $('message').textContent=text; $('message').hidden=false; };
-  const WATCHED_KEY = 'anime-library-watched-v1';
+  const WATCHED_KEY = 'anime-library-watched-episodes-v1';
   let watched = new Set();
   try {
     const stored = JSON.parse(localStorage.getItem(WATCHED_KEY) || '[]');
     if (Array.isArray(stored)) watched = new Set(stored.filter(x => typeof x === 'string'));
   } catch {}
   const showKey = title => title.normalize('NFKC').trim().toLowerCase();
-  function toggleWatched(title) {
-    const key = showKey(title), updated = new Set(watched);
+  const episodeKey = (show, episode) => JSON.stringify([showKey(show.title), String(episode.number).normalize('NFKC').trim()]);
+  const showWatched = show => show.episodes.length > 0 && show.episodes.every(episode => watched.has(episodeKey(show, episode)));
+  function toggleWatched(key) {
+    const updated = new Set(watched);
     if (!updated.delete(key)) updated.add(key);
     try {
       localStorage.setItem(WATCHED_KEY, JSON.stringify([...updated]));
@@ -60,7 +62,7 @@
     $('search').placeholder=e?'ابحث عن سيرفر أو جودة…':a?'ابحث عن حلقة…':'ابحث عن أنمي…';
     $('stats').replaceChildren();
     const shows = library.anime.length;
-    const viewed = library.anime.filter(show => watched.has(showKey(show.title))).length;
+    const viewed = library.anime.filter(show => showWatched(show)).length;
     for(const [value,label] of [[shows,'أنمي'],[viewed,'تمت مشاهدته']]){
       const stat=document.createElement('div');stat.className='stat';
       const number=document.createElement('strong');number.textContent=value.toLocaleString('ar');
@@ -69,7 +71,7 @@
     $('breadcrumbs').replaceChildren();crumb('المكتبة','#');
     if(a){crumb('／');crumb(a.title,`#anime/${ai}`);}if(e){crumb('／');crumb(e.title);}
     const query=$('search').value.trim().toLowerCase();
-    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة · فتح المشاهدة':'رابط مشاهدة · فتح السيرفر',url:l.url,badge:l.quality,icon:'▷'})):a?a.episodes.map((ep,i)=>({title:ep.title,meta:'عرض السيرفرات',href:`#anime/${ai}/episode/${i}`,icon:String(ep.number).padStart(2,'0')})):library.anime.map((item,i)=>({title:item.title,image:item.image,showTitle:item.title,meta:'تصفّح الحلقات',href:`#anime/${i}`,icon:'▤'}));
+    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة · فتح المشاهدة':'رابط مشاهدة · فتح السيرفر',url:l.url,badge:l.quality,icon:'▷'})):a?a.episodes.map((ep,i)=>({title:ep.title,episodeKey:episodeKey(a,ep),meta:'عرض السيرفرات',href:`#anime/${ai}/episode/${i}`,icon:String(ep.number).padStart(2,'0')})):library.anime.map((item,i)=>({title:item.title,image:item.image,showViewed:showWatched(item),meta:'تصفّح الحلقات',href:`#anime/${i}`,icon:'▤'}));
     const filtered=entries.filter(x=>(x.title+' '+x.meta+' '+(x.badge||'')).toLowerCase().includes(query));
     if($('sort').value==='name')filtered.sort((x,y)=>x.title.localeCompare(y.title,'ar',{numeric:true}));
     $('count').textContent=ai===undefined?`${filtered.length} أنمي`:'';$('items').replaceChildren();
@@ -84,14 +86,18 @@
       add('span','icon',item.icon);add('span','arrow','←');add('h2','',item.title);add('span','meta',item.meta);
       if(item.image){const img=document.createElement('img');img.className='cover';img.alt=item.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.src=item.image;img.addEventListener('error',()=>{img.remove();card.classList.remove('has-cover');});link.prepend(img);card.classList.add('has-cover');}
       if(item.badge)add('span','badge',item.badge);if(item.url)add('span','url',new URL(item.url).hostname);
-      if(item.showTitle){
-        const viewed=watched.has(showKey(item.showTitle));
+      if(item.episodeKey){
+        const viewed=watched.has(item.episodeKey);
         const button=document.createElement('button');button.className='watched-toggle'+(viewed?' is-watched':'');
         button.type='button';button.textContent=viewed?'✓ تمت المشاهدة':'وضع علامة كمُشاهد';
         button.setAttribute('aria-pressed',String(viewed));
-        button.setAttribute('aria-label',`${viewed?'إلغاء علامة المشاهدة عن':'وضع علامة كمُشاهد على'} ${item.showTitle}`);
-        button.addEventListener('click',()=>{toggleWatched(item.showTitle);const replacement=[...document.querySelectorAll('.watched-toggle')].find(b=>b.getAttribute('aria-label').endsWith(' '+item.showTitle));replacement?.focus();});
+        button.setAttribute('aria-label',`${viewed?'إلغاء علامة المشاهدة عن':'وضع علامة كمُشاهد على'} ${item.title}`);
+        button.dataset.episodeKey=item.episodeKey;
+        button.addEventListener('click',()=>{toggleWatched(item.episodeKey);[...document.querySelectorAll('.watched-toggle')].find(b=>b.dataset.episodeKey===item.episodeKey)?.focus();});
         card.append(button);
+      }
+      if(item.showViewed){
+        const badge=document.createElement('span');badge.className='watched-label';badge.textContent='✓ تمت المشاهدة';card.append(badge);
       }
       $('items').append(card);
     }

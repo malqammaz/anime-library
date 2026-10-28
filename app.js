@@ -25,6 +25,8 @@
   }
   let library = sample;
   let saved = false;
+  let listView = false;
+  try { listView = localStorage.getItem('anime-library-list-view') === 'true'; } catch {}
   try { const stored = localStorage.getItem(KEY); if (stored) {library=normalize(JSON.parse(stored));saved=true;} } catch {}
   const notify = text => { $('message').textContent=text; $('message').hidden=false; };
   function persist() { try {localStorage.setItem(KEY,JSON.stringify(library));return true;} catch {notify('تم فتح البيانات، لكن تعذر حفظها في المتصفح. صدّر JSON للاحتفاظ بها.');return false;} }
@@ -40,16 +42,29 @@
     const {ai,ei}=route(),a=library.anime[ai],e=a?.episodes[ei];
     $('title').textContent=e?.title || a?.title || 'مكتبة الأنمي';
     $('subtitle').textContent=e?'اختَر السيرفر لفتح رابط الحلقة.':a?'كل الحلقات، مرتّبة في مجلد واحد.':'تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.';
+    $('search').placeholder=e?'ابحث عن سيرفر أو جودة…':a?'ابحث عن حلقة…':'ابحث عن أنمي…';
+    $('stats').replaceChildren();
+    const shows=library.anime.length, episodes=library.anime.reduce((sum,show)=>sum+show.episodes.length,0), links=library.anime.reduce((sum,show)=>sum+show.episodes.reduce((n,ep)=>n+ep.links.length,0),0);
+    for(const [value,label] of [[shows,'أنمي'],[episodes,'حلقة'],[links,'رابط']]){
+      const stat=document.createElement('div');stat.className='stat';
+      const number=document.createElement('strong');number.textContent=value.toLocaleString('ar');
+      const name=document.createElement('span');name.textContent=label;stat.append(number,name);$('stats').append(stat);
+    }
     $('breadcrumbs').replaceChildren();crumb('المكتبة','#');
     if(a){crumb('／');crumb(a.title,`#anime/${ai}`);}if(e){crumb('／');crumb(e.title);}
     const query=$('search').value.trim().toLowerCase();
-    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة':'رابط مشاهدة',url:l.url,badge:l.quality,icon:'↗'})):a?a.episodes.map((ep,i)=>({title:ep.title,meta:`${ep.links.length} روابط`,href:`#anime/${ai}/episode/${i}`,icon:'▤'})):library.anime.map((item,i)=>({title:item.title,image:item.image,meta:`${item.episodes.length} حلقات`,href:`#anime/${i}`,icon:'▰'}));
+    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة · فتح المشاهدة':'رابط مشاهدة · فتح السيرفر',url:l.url,badge:l.quality,icon:'▷'})):a?a.episodes.map((ep,i)=>({title:ep.title,meta:`${ep.links.length} روابط مشاهدة`,href:`#anime/${ai}/episode/${i}`,icon:String(ep.number).padStart(2,'0')})):library.anime.map((item,i)=>({title:item.title,image:item.image,meta:`${item.episodes.length} حلقات · ${item.episodes.reduce((sum,ep)=>sum+ep.links.length,0)} روابط`,href:`#anime/${i}`,icon:'▤'}));
     const filtered=entries.filter(x=>(x.title+' '+x.meta+' '+(x.badge||'')).toLowerCase().includes(query));
-    $('count').textContent=`${filtered.length} عناصر`;$('items').replaceChildren();
+    if($('sort').value==='name')filtered.sort((x,y)=>x.title.localeCompare(y.title,'ar',{numeric:true}));
+    $('count').textContent=`${filtered.length} ${e?'سيرفر':a?'حلقة':'أنمي'}`;$('items').replaceChildren();
+    $('items').className='grid'+(e?' links':a?' episodes':listView?' list':'');
+    $('view').hidden=ai!==undefined;
+    $('view').textContent=listView?'عرض بطاقات':'عرض قائمة';
+    $('view').setAttribute('aria-pressed',String(listView));
     for(const item of filtered){
       const card=document.createElement('a');card.className='card';card.href=item.url || item.href;
       const add=(tag,cls,text)=>{const el=document.createElement(tag);el.className=cls;el.textContent=text;card.append(el);};
-      add('span','icon',item.icon);add('span','arrow','↖');add('h2','',item.title);add('span','meta',item.meta);
+      add('span','icon',item.icon);add('span','arrow','←');add('h2','',item.title);add('span','meta',item.meta);
       if(item.image){const img=document.createElement('img');img.className='cover';img.alt=item.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.src=item.image;img.addEventListener('error',()=>{img.remove();card.classList.remove('has-cover');});card.prepend(img);card.classList.add('has-cover');}
       if(item.badge)add('span','badge',item.badge);if(item.url)add('span','url',new URL(item.url).hostname);
       $('items').append(card);
@@ -57,6 +72,9 @@
     if(!filtered.length){const empty=document.createElement('div');empty.className='empty';empty.textContent=query?'لا توجد نتائج مطابقة.':'هذا المجلد فارغ. استورد ملف JSON لإضافة بياناتك.';$('items').append(empty);}
   }
   $('search').addEventListener('input',render);
+  $('sort').addEventListener('change',render);
+  $('view').addEventListener('click',()=>{listView=!listView;try{localStorage.setItem('anime-library-list-view',String(listView));}catch{}render();});
+  $('import-button').addEventListener('click',()=>$('import').click());
   window.addEventListener('hashchange',()=>{$('search').value='';render();});
   $('import').addEventListener('change',async event=>{
     const file=event.target.files[0];if(!file)return;

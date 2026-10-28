@@ -3,10 +3,10 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبتي · الأنمي</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <div class="shell">
-<header><a class="brand" href="#">▣ <span>مكتبتي<small>ANIME LIBRARY</small></span></a><div class="actions"><label class="button" for="import">استيراد JSON</label><input id="import" type="file" accept=".json,application/json" hidden><button id="export">تصدير المكتبة ↓</button></div></header>
-<main><div class="intro"><span class="eyebrow">كل حكاية، في مكان واحد</span><h1 id="title">مكتبة الأنمي</h1><p id="subtitle">تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.</p></div>
+<header><a class="brand" href="#"><span class="brand-icon" aria-hidden="true">▤</span><span>مكتبتي<small>ANIME LIBRARY</small></span></a><div class="actions"><button id="import-button">＋ استيراد JSON</button><input id="import" type="file" accept=".json,application/json" hidden><button id="export" class="secondary">تصدير المكتبة ↓</button></div></header>
+<main><div class="intro"><div><span class="eyebrow">مساحتك الخاصة للأنمي</span><h1 id="title">مكتبة الأنمي</h1><p id="subtitle">تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.</p></div><div id="stats" class="stats" aria-label="إحصائيات المكتبة"></div></div>
 <nav id="breadcrumbs" aria-label="مسار المجلدات"></nav>
-<div class="toolbar"><label class="search"><span>⌕</span><input id="search" placeholder="ابحث في هذا المجلد…" aria-label="بحث"></label><span id="count"></span></div>
+<div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث عن أنمي…" aria-label="بحث"></label><div class="tools"><span id="count" role="status"></span><label class="sort-label">ترتيب <select id="sort" aria-label="ترتيب العناصر"><option value="default">الافتراضي</option><option value="name">الاسم</option></select></label><button id="view" class="secondary" aria-pressed="false">عرض قائمة</button></div></div>
 <p id="message" role="status" hidden></p><div id="items" class="grid"></div>
 </main><footer><span>مجلدات مرتّبة. مشاهدة أسهل.</span><span>البيانات محفوظة في متصفحك · JSON</span></footer>
 </div><script src="app.js"></script>

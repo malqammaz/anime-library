@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Reset library.json
-        run: printf '{\n  "anime": []\n}\n' > library.json
+        run: |
+          printf '%s\n' '{' '  "anime": []' '}' > library.json
 
       - name: Commit and push reset
         run: |

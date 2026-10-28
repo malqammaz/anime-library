@@ -1,0 +1,12 @@
+{
+  "anime": [
+    {
+      "title": "The Vermilion Mask",
+      "episodes": [
+        {"number": 1, "title": "الحلقة 1", "links": [{"label": "Dood", "quality": "FHD", "url": "https://dood.to/e/n0suxtoym77y"}]},
+        {"number": 2, "title": "الحلقة 2", "links": [{"label": "Dood", "quality": "FHD", "url": "https://dood.to/e/nclsplww5sid"}]},
+        {"number": 3, "title": "الحلقة 3", "links": [{"label": "Dood", "quality": "FHD", "url": "https://dood.to/e/ojsvdvetmz5u"}, {"label": "Uqload", "quality": "FHD", "url": "https://uqload.vc/embed-mqgjo0ipz3nm.html"}]}
+      ]
+    }
+  ]
+}

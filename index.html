@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبتي · الأنمي</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="shell">
+<header><a class="brand" href="#">▣ <span>مكتبتي<small>ANIME LIBRARY</small></span></a><div class="actions"><label class="button" for="import">استيراد JSON</label><input id="import" type="file" accept=".json,application/json" hidden><button id="export">تصدير المكتبة ↓</button></div></header>
+<main><div class="intro"><span class="eyebrow">كل حكاية، في مكان واحد</span><h1 id="title">مكتبة الأنمي</h1><p id="subtitle">تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.</p></div>
+<nav id="breadcrumbs" aria-label="مسار المجلدات"></nav>
+<div class="toolbar"><label class="search"><span>⌕</span><input id="search" placeholder="ابحث في هذا المجلد…" aria-label="بحث"></label><span id="count"></span></div>
+<p id="message" role="status" hidden></p><div id="items" class="grid"></div>
+</main><footer><span>مجلدات مرتّبة. مشاهدة أسهل.</span><span>البيانات محفوظة في متصفحك · JSON</span></footer>
+</div><script src="app.js"></script>
+</body></html>

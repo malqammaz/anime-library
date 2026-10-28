@@ -1,3 +1,226 @@
 {
-  "anime": []
+  "anime": [
+    {
+      "title": "Battle Spirits [Re] ZEKKAI NO KU",
+      "episodes": [
+        {
+          "number": 1,
+          "title": "الحلقة 1",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/rCI2XLxY#R6Ob27isuB8HepNIcYKQNx2wNKeRqjgM51QxMuoui58",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/620hzgyxxg6w",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-jwkudm7pc2nj.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/cn0bufckz492",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/rCI2XLxY#R6Ob27isuB8HepNIcYKQNx2wNKeRqjgM51QxMuoui58",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/620hzgyxxg6w",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/jwkudm7pc2nj.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/cn0bufckz492",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الحلقة 2",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/3XYlWQaL#wAOfMgKb0dbZnHXnwr-sUqSzsd5WsSXFQFcLN_3MSMk",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/29u66co2lvqs",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-isfd3767ub12.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/6476b7zkj1xm",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/3XYlWQaL#wAOfMgKb0dbZnHXnwr-sUqSzsd5WsSXFQFcLN_3MSMk",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/29u66co2lvqs",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/isfd3767ub12.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/6476b7zkj1xm",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "الحلقة 3",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/rOQHlBbC#utcO8oEpz1NTTpyQNQtmPWpk_hROBd0XRk6taqktOzs",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/8ima3nnnkxvg",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-vwm05qphromi.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/yxd04w4lrb3g",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/rOQHlBbC#utcO8oEpz1NTTpyQNQtmPWpk_hROBd0XRk6taqktOzs",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/8ima3nnnkxvg",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/vwm05qphromi.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/yxd04w4lrb3g",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "الحلقة 4",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/bHJQwBhA#RD2qcUwDRKaYX7MV2mH99dfy_6qzKJx5n9gFYse8Afc",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/bx9hek07017c",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-oxp7ryg95ew5.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/4zoc3e8xa559",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/bHJQwBhA#RD2qcUwDRKaYX7MV2mH99dfy_6qzKJx5n9gFYse8Afc",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/bx9hek07017c",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/oxp7ryg95ew5.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/4zoc3e8xa559",
+              "quality": ""
+            }
+          ]
+        }
+      ],
+      "image": "https://yalanime.com/wp-content/uploads/2026/10/6jjfwGwjaLIGKstXq2XITgbddAX-369x520.jpg"
+    }
+  ]
 }

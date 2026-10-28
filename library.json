@@ -1,3 +1,520 @@
 {
-  "anime": []
+  "anime": [
+    {
+      "title": "Red River",
+      "episodes": [
+        {
+          "number": 1,
+          "title": "الحلقة 1",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/TKgl3BgC#3smRJww654MQ5PTjytjkgfd14_VM34x_XSstBn0nWJY",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/hcrkgbnlnasl",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/TKgl3BgC#3smRJww654MQ5PTjytjkgfd14_VM34x_XSstBn0nWJY",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الحلقة 2",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/DKgSADKQ#fT7FupoKdIPbNeFXs2xhdk0BV2JyMGqms3h8-5BD71U",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/tbsw9mm7id20",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/DKgSADKQ#fT7FupoKdIPbNeFXs2xhdk0BV2JyMGqms3h8-5BD71U",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "الحلقة 3",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/WCpRXAzK#6cD0KL2UTBlUHZSVK86DEfGf6F2p5HUigx084UEjo30",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/o563r9ihvk5y",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/WCpRXAzK#6cD0KL2UTBlUHZSVK86DEfGf6F2p5HUigx084UEjo30",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "الحلقة 4",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/ybZ2VQaL#3wQLIgGIMcJeG62kLHLDPDoYzQNxwcSjmSUN8-0lJnk",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/cq884cbt647t",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/ybZ2VQaL#3wQLIgGIMcJeG62kLHLDPDoYzQNxwcSjmSUN8-0lJnk",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "الحلقة 5",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/yShhnTrS#GPSerZu9lYCYAzhGsPlpaWRQ54D8DU8qZ0ocpsD7sZg",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/ataxokg9dpfe",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/yShhnTrS#GPSerZu9lYCYAzhGsPlpaWRQ54D8DU8qZ0ocpsD7sZg",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "الحلقة 6",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/zPJwSRKJ#Ui36gJuhXXepXg3RKNDGdFXVt5cYRwkBWYmJFTmLNfY",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/7x1y8h4s3tlx",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/zPJwSRKJ#Ui36gJuhXXepXg3RKNDGdFXVt5cYRwkBWYmJFTmLNfY",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "الحلقة 7",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/3O5R1JbC#j2QShXJhKJjQXgbgwBCikh13lcMXP5Iaw_GKEUd8DEc",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/runwgtrbho4f",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/3O5R1JbC#j2QShXJhKJjQXgbgwBCikh13lcMXP5Iaw_GKEUd8DEc",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "الحلقة 8",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/DOhBDDJQ#Limk_JHlxUvlcywmZkiwEqahewkJ6_yOhpF7wbRGjms",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/q9k8er1ouj5v",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/DOhBDDJQ#Limk_JHlxUvlcywmZkiwEqahewkJ6_yOhpF7wbRGjms",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "الحلقة 9",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/2eJVWKJZ#alsZFg18u_-HtK-snJu6yBPbYadPsV4hlqde6Vu3Ffg",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/hwc223erxey2",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/2eJVWKJZ#alsZFg18u_-HtK-snJu6yBPbYadPsV4hlqde6Vu3Ffg",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "الحلقة 10",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/OeQmTYzB#Sc0c9IVg9S0Fpe91EkNfzYQsgnihRvhMzp19CMm88ys",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/rqg0t475hveg",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/OeQmTYzB#Sc0c9IVg9S0Fpe91EkNfzYQsgnihRvhMzp19CMm88ys",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "الحلقة 11",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/iaACmJTR#kODSun4sZ1XARxGAdK3h6PYA2tf6N2wRLE2nGZUvTKs",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/9oln9iw3m0pm",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/iaACmJTR#kODSun4sZ1XARxGAdK3h6PYA2tf6N2wRLE2nGZUvTKs",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "الحلقة 12",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/rOwmAAzZ#ORGDrdt0phZ-5Z8kCQtQXIwRcSqOF3BxNKQthzRn3HQ",
+              "quality": "FHD"
+            },
+            {
+              "label": "hgcloud FHD",
+              "type": "player",
+              "url": "https://hgcloud.to/e/k23ifquv10fw",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/rOwmAAzZ#ORGDrdt0phZ-5Z8kCQtQXIwRcSqOF3BxNKQthzRn3HQ",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "الحلقة 13",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/GGQB3TRT#tscIW2x_cbtR4VEfxMwWD50hmSZwwQa5CJ0HKwxofg0",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/h7njoa31r4el",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/eqvkvzp7exzk",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/GGQB3TRT#tscIW2x_cbtR4VEfxMwWD50hmSZwwQa5CJ0HKwxofg0",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/h7njoa31r4el",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/eqvkvzp7exzk",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "الحلقة 14",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/magwmDzY#ZXajhpa-LglkqoVa8HZ1sAeVD4ZBQ6fdZfUmz-vdI0c",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/w4zuo9fc7jcs",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-bmbpsv30w7y2.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/ojwymr88x3t9",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/magwmDzY#ZXajhpa-LglkqoVa8HZ1sAeVD4ZBQ6fdZfUmz-vdI0c",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/w4zuo9fc7jcs",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/bmbpsv30w7y2.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/ojwymr88x3t9",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "الحلقة 15",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/jDAgnSaK#-jdsbbVLxdux5_yGVLmN1APqqdsP5M7A76TzoPSCbIs",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/dnczie1855d7",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-ar977ineqwin.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/2r0iweldx9w8",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/jDAgnSaK#-jdsbbVLxdux5_yGVLmN1APqqdsP5M7A76TzoPSCbIs",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/dnczie1855d7",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/ar977ineqwin.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/2r0iweldx9w8",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "title": "الحلقة 16",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/PSQTUJ7C#Dplg7FTM356Vyc4yCxeoVyth2EsiPH4bGwoWEw1bLFU",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/PSQTUJ7C#Dplg7FTM356Vyc4yCxeoVyth2EsiPH4bGwoWEw1bLFU",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "title": "الحلقة 17",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/jfIWiSxS#SHnGgdIBgm-V2uAoGTmxnyf3dxdS6ai0QtcCQWUrqnE",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/hbnrgo3q06qb",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-ijyykd0rreif.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/zsrbj759x1vu",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/jfIWiSxS#SHnGgdIBgm-V2uAoGTmxnyf3dxdS6ai0QtcCQWUrqnE",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/hbnrgo3q06qb",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/ijyykd0rreif.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/zsrbj759x1vu",
+              "quality": ""
+            }
+          ]
+        }
+      ],
+      "image": "https://yalanime.com/wp-content/uploads/2026/09/bx207809-cpS7CAyjN7iP-367x520.jpg"
+    }
+  ]
 }

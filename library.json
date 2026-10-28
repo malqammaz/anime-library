@@ -1,274 +1,441 @@
 {
   "anime": [
-{
-  "title": "انمي Overgeared",
-  "page": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-5/",
-  "discovered": 5,
-  "processed": 5,
-  "truncated": false,
-  "note": "روابط السيرفرات مستخرجة فقط ولم يتم التحقق من تشغيلها. يجمع الحلقات المدرجة في الصفحة الحالية؛ لا يجتاز صفحات القوائم تلقائياً.",
-  "episodes": [
     {
-      "number": 1,
-      "title": "مشاهدة",
-      "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1/watch/",
-      "links": [
+      "title": "انمي Overgeared",
+      "page": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-5/",
+      "discovered": 5,
+      "processed": 5,
+      "truncated": false,
+      "note": "روابط السيرفرات مستخرجة فقط ولم يتم التحقق من تشغيلها. يجمع الحلقات المدرجة في الصفحة الحالية؛ لا يجتاز صفحات القوائم تلقائياً.",
+      "episodes": [
         {
-          "label": "mega FHD",
-          "type": "player",
-          "url": "https://mega.nz/embed/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
+          "number": 1,
+          "title": "مشاهدة",
+          "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1/watch/",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/0jkoapabda2q"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-ml21ulky2jvb.html"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/VeugnOvOcVpB6"
+            },
+            {
+              "label": "",
+              "type": "iframe",
+              "url": "https://mega.nz/embed/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/0jkoapabda2q"
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/ml21ulky2jvb.html"
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/VeugnOvOcVpB6"
+            }
+          ]
         },
         {
-          "label": "morencius FHD",
-          "type": "player",
-          "url": "https://morencius.com/embed/0jkoapabda2q"
+          "number": 2,
+          "title": "مشاهدة",
+          "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-2/watch/",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/1uesfo86m9kj"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-7pgyzq24e31g.html"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/l962coec944h"
+            },
+            {
+              "label": "",
+              "type": "iframe",
+              "url": "https://mega.nz/embed/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/1uesfo86m9kj"
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/7pgyzq24e31g.html"
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/l962coec944h"
+            }
+          ]
         },
         {
-          "label": "uqload FHD",
-          "type": "player",
-          "url": "https://uqload.vc/embed-ml21ulky2jvb.html"
+          "number": 3,
+          "title": "مشاهدة",
+          "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-3/watch/",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/e247lfzsk2q4"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-jlpgdnnlli5b.html"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/aggyq3zlk5v1"
+            },
+            {
+              "label": "",
+              "type": "iframe",
+              "url": "https://mega.nz/embed/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/e247lfzsk2q4"
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/jlpgdnnlli5b.html"
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/aggyq3zlk5v1"
+            }
+          ]
         },
         {
-          "label": "vidara FHD",
-          "type": "player",
-          "url": "https://vidara.to/e/VeugnOvOcVpB6"
+          "number": 4,
+          "title": "مشاهدة",
+          "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-4/watch/",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/c8114868l42d"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-y2kne5v26vel.html"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/0hh3qlalhvi9"
+            },
+            {
+              "label": "",
+              "type": "iframe",
+              "url": "https://mega.nz/embed/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/c8114868l42d"
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/y2kne5v26vel.html"
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/0hh3qlalhvi9"
+            }
+          ]
         },
         {
-          "label": "",
-          "type": "iframe",
-          "url": "https://mega.nz/embed/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
-        },
-        {
-          "label": "mega",
-          "type": "host-link",
-          "url": "https://mega.nz/file/rPxD1RRJ#WrTV0C1YtvTUvWMY_bWXJbEBDuENdNwFn9qMFai6eFI"
-        },
-        {
-          "label": "morencius",
-          "type": "host-link",
-          "url": "https://morencius.com/download/0jkoapabda2q"
-        },
-        {
-          "label": "uqload",
-          "type": "host-link",
-          "url": "https://uqload.vc/ml21ulky2jvb.html"
-        },
-        {
-          "label": "vidara",
-          "type": "host-link",
-          "url": "https://vidara.to/VeugnOvOcVpB6"
+          "number": 5,
+          "title": "مشاهدة الحلقة",
+          "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-5/watch/",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/2v6qkwb18c4m"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-fa70ja361yln.html"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/7h81iiriwnyh"
+            },
+            {
+              "label": "",
+              "type": "iframe",
+              "url": "https://mega.nz/embed/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/2v6qkwb18c4m"
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/fa70ja361yln.html"
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/7h81iiriwnyh"
+            }
+          ]
         }
       ]
     },
     {
-      "number": 2,
-      "title": "مشاهدة",
-      "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-2/watch/",
-      "links": [
+      "title": "DARK MACHINE THE ANIMATION",
+      "episodes": [
         {
-          "label": "mega FHD",
-          "type": "player",
-          "url": "https://mega.nz/embed/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
+          "number": 1,
+          "title": "الحلقة 1",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/CGgwTBiZ#p1fd87yZIkg8xdvJDn4dzELgxijGdcIr6bDEOae5DL0",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/e13qes3zbr95",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-fqvylmbr5yg0.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/vv86scy98l74",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/CGgwTBiZ#p1fd87yZIkg8xdvJDn4dzELgxijGdcIr6bDEOae5DL0",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/e13qes3zbr95",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/fqvylmbr5yg0.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/vv86scy98l74",
+              "quality": ""
+            }
+          ]
         },
         {
-          "label": "morencius FHD",
-          "type": "player",
-          "url": "https://morencius.com/embed/1uesfo86m9kj"
+          "number": 2,
+          "title": "الحلقة 2",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/DaAAAbzA#5oIqvZDZ33xP0nxDlrdaPwSfpmIfiavnJbVJj73E-ec",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/jkng32nyhtrl",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-00he4t2vkaht.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/mcttsufuuado",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/DaAAAbzA#5oIqvZDZ33xP0nxDlrdaPwSfpmIfiavnJbVJj73E-ec",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/jkng32nyhtrl",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/00he4t2vkaht.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/mcttsufuuado",
+              "quality": ""
+            }
+          ]
         },
         {
-          "label": "uqload FHD",
-          "type": "player",
-          "url": "https://uqload.vc/embed-7pgyzq24e31g.html"
-        },
-        {
-          "label": "dood FHD",
-          "type": "player",
-          "url": "https://dood.to/e/l962coec944h"
-        },
-        {
-          "label": "",
-          "type": "iframe",
-          "url": "https://mega.nz/embed/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
-        },
-        {
-          "label": "mega",
-          "type": "host-link",
-          "url": "https://mega.nz/file/XeBlkJCa#1zAF650WUSyNCcYhKmVSUfKappyPUIkItYRBn1A-bzo"
-        },
-        {
-          "label": "morencius",
-          "type": "host-link",
-          "url": "https://morencius.com/download/1uesfo86m9kj"
-        },
-        {
-          "label": "uqload",
-          "type": "host-link",
-          "url": "https://uqload.vc/7pgyzq24e31g.html"
-        },
-        {
-          "label": "dood",
-          "type": "host-link",
-          "url": "https://dood.to/d/l962coec944h"
-        }
-      ]
-    },
-    {
-      "number": 3,
-      "title": "مشاهدة",
-      "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-3/watch/",
-      "links": [
-        {
-          "label": "mega FHD",
-          "type": "player",
-          "url": "https://mega.nz/embed/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
-        },
-        {
-          "label": "morencius FHD",
-          "type": "player",
-          "url": "https://morencius.com/embed/e247lfzsk2q4"
-        },
-        {
-          "label": "uqload FHD",
-          "type": "player",
-          "url": "https://uqload.vc/embed-jlpgdnnlli5b.html"
-        },
-        {
-          "label": "dood FHD",
-          "type": "player",
-          "url": "https://dood.to/e/aggyq3zlk5v1"
-        },
-        {
-          "label": "",
-          "type": "iframe",
-          "url": "https://mega.nz/embed/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
-        },
-        {
-          "label": "mega",
-          "type": "host-link",
-          "url": "https://mega.nz/file/CSwTWQQb#2KvXJvjfKpV_pVl6LFukQG2tENUGA8w0TMCCdQOwBso"
-        },
-        {
-          "label": "morencius",
-          "type": "host-link",
-          "url": "https://morencius.com/download/e247lfzsk2q4"
-        },
-        {
-          "label": "uqload",
-          "type": "host-link",
-          "url": "https://uqload.vc/jlpgdnnlli5b.html"
-        },
-        {
-          "label": "dood",
-          "type": "host-link",
-          "url": "https://dood.to/d/aggyq3zlk5v1"
-        }
-      ]
-    },
-    {
-      "number": 4,
-      "title": "مشاهدة",
-      "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-4/watch/",
-      "links": [
-        {
-          "label": "mega FHD",
-          "type": "player",
-          "url": "https://mega.nz/embed/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
-        },
-        {
-          "label": "morencius FHD",
-          "type": "player",
-          "url": "https://morencius.com/embed/c8114868l42d"
-        },
-        {
-          "label": "uqload FHD",
-          "type": "player",
-          "url": "https://uqload.vc/embed-y2kne5v26vel.html"
-        },
-        {
-          "label": "dood FHD",
-          "type": "player",
-          "url": "https://dood.to/e/0hh3qlalhvi9"
-        },
-        {
-          "label": "",
-          "type": "iframe",
-          "url": "https://mega.nz/embed/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
-        },
-        {
-          "label": "mega",
-          "type": "host-link",
-          "url": "https://mega.nz/file/XaggVKSS#-b8KqmuE5azgsBPGZzqNUgOjruXm6ekw0sWaVV-0zMo"
-        },
-        {
-          "label": "morencius",
-          "type": "host-link",
-          "url": "https://morencius.com/download/c8114868l42d"
-        },
-        {
-          "label": "uqload",
-          "type": "host-link",
-          "url": "https://uqload.vc/y2kne5v26vel.html"
-        },
-        {
-          "label": "dood",
-          "type": "host-link",
-          "url": "https://dood.to/d/0hh3qlalhvi9"
-        }
-      ]
-    },
-    {
-      "number": 5,
-      "title": "مشاهدة الحلقة",
-      "url": "https://yalanime.com/%d8%a7%d9%86%d9%85%d9%8a-overgeared-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-5/watch/",
-      "links": [
-        {
-          "label": "mega FHD",
-          "type": "player",
-          "url": "https://mega.nz/embed/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
-        },
-        {
-          "label": "morencius FHD",
-          "type": "player",
-          "url": "https://morencius.com/embed/2v6qkwb18c4m"
-        },
-        {
-          "label": "uqload FHD",
-          "type": "player",
-          "url": "https://uqload.vc/embed-fa70ja361yln.html"
-        },
-        {
-          "label": "dood FHD",
-          "type": "player",
-          "url": "https://dood.to/e/7h81iiriwnyh"
-        },
-        {
-          "label": "",
-          "type": "iframe",
-          "url": "https://mega.nz/embed/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
-        },
-        {
-          "label": "mega",
-          "type": "host-link",
-          "url": "https://mega.nz/file/7PQCCJaD#fcrcFUmANfnfN9sbBsZlg0ipSHPz_xq8Z8Mt-CnjqdQ"
-        },
-        {
-          "label": "morencius",
-          "type": "host-link",
-          "url": "https://morencius.com/download/2v6qkwb18c4m"
-        },
-        {
-          "label": "uqload",
-          "type": "host-link",
-          "url": "https://uqload.vc/fa70ja361yln.html"
-        },
-        {
-          "label": "dood",
-          "type": "host-link",
-          "url": "https://dood.to/d/7h81iiriwnyh"
+          "number": 3,
+          "title": "الحلقة 3",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/HOYwDQhY#VeWF15F0IOFpcutH7G37EB2QilTSSXLjAJfGtaC5wps",
+              "quality": "FHD"
+            },
+            {
+              "label": "morencius FHD",
+              "type": "player",
+              "url": "https://morencius.com/embed/dth73ecoo0xt",
+              "quality": "FHD"
+            },
+            {
+              "label": "uqload FHD",
+              "type": "player",
+              "url": "https://uqload.vc/embed-dfl8yrlgik0r.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/dfc8ajs7bnnd",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/HOYwDQhY#VeWF15F0IOFpcutH7G37EB2QilTSSXLjAJfGtaC5wps",
+              "quality": ""
+            },
+            {
+              "label": "morencius",
+              "type": "host-link",
+              "url": "https://morencius.com/download/dth73ecoo0xt",
+              "quality": ""
+            },
+            {
+              "label": "uqload",
+              "type": "host-link",
+              "url": "https://uqload.vc/dfl8yrlgik0r.html",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/dfc8ajs7bnnd",
+              "quality": ""
+            }
+          ]
         }
       ]
     }
-  ]
-}
   ]
 }

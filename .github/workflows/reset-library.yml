@@ -1,0 +1,30 @@
+name: Reset anime library
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reset-library:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Reset library.json
+        run: printf '{\n  "anime": []\n}\n' > library.json
+
+      - name: Commit and push reset
+        run: |
+          if git diff --quiet -- library.json; then
+            echo "library.json is already empty."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add library.json
+          git commit -m "Reset anime library"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

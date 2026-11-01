@@ -1010,6 +1010,60 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 5,
+          "title": "الحلقة 5",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/6OxkkYKY#bUMgLcQPLwphecW-6T1DrQNbrm147h-66ayMxRntxRc",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/asCf4ZhnVZPq4",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/pnwrgdpcijjy",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/WqM1wFYvHq",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-rj1pgi3uwhui.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/6OxkkYKY#bUMgLcQPLwphecW-6T1DrQNbrm147h-66ayMxRntxRc",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/asCf4ZhnVZPq4",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/pnwrgdpcijjy",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx191788-XC6F24LdX6a4-368x520.jpg"

@@ -1286,9 +1286,39 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 5,
+          "title": "الحلقة 5",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/SCQA1KDR#RbKOZqUz0gxMlIrDQ25sKudr0uV8pIxhQBjha2lCXlY",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/tr5ryo65y27m",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/SCQA1KDR#RbKOZqUz0gxMlIrDQ25sKudr0uV8pIxhQBjha2lCXlY",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/tr5ryo65y27m",
+              "quality": ""
+            }
+          ]
         }
       ],
-      "image": "https://yalanime.com/wp-content/uploads/2026/10/bx178083-bg7pg6TCHwtG.jpg"
+      "image": "https://yalanime.com/wp-content/uploads/2026/10/bx178083-bg7pg6TCHwtG-359x520.jpg"
     },
     {
       "title": "TOUGEN ANKI: Nikko Kegon Falls Arc",

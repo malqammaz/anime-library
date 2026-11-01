@@ -272,6 +272,54 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 6,
+          "title": "الحلقة 6",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/nLBTHY5a#BEOam_7JuhjOA71FQw_xkKxYvFy88kNVsgSAEMTvv-A",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/0Tc5HImQQ5rJG",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/zuf0awh7fjbi",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/3ioyuTJdTy",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/nLBTHY5a#BEOam_7JuhjOA71FQw_xkKxYvFy88kNVsgSAEMTvv-A",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/0Tc5HImQQ5rJG",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/zuf0awh7fjbi",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/09/bx212888-NhyvqPt5aIuJ-340x520.jpg"

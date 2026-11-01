@@ -734,6 +734,48 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 4,
+          "title": "الحلقة 4",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/LSohXaIR#8AOXtb5BaPSIYtZqPwkYGBblAAJC1PfF6OKTfeTJnMU",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/GVyTOG8M9mkTG",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/f1muvj7lk6fd",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/LSohXaIR#8AOXtb5BaPSIYtZqPwkYGBblAAJC1PfF6OKTfeTJnMU",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/GVyTOG8M9mkTG",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/f1muvj7lk6fd",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx195571-fvj7u5GI7BRT-368x520.jpg"

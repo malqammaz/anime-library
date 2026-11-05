@@ -1,0 +1,11 @@
+{
+  "name": "anime-library-sync",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tools/*.test.mjs",
+    "sync": "node tools/sync-library.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "linkedom": "0.18.15" }
+}

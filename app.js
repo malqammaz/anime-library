@@ -1,3 +1,5 @@
+import {deleteAnimeFromRepository} from './github-library.js';
+
 (() => {
   'use strict';
   const KEY = 'anime-library-v1';
@@ -12,8 +14,8 @@
     const list = Array.isArray(data.anime) ? data.anime : Array.isArray(data.episodes) ? [data] : null;
     if (!list) throw new Error('الملف يجب أن يحتوي anime أو episodes.');
     return {anime:list.map((a,i) => {
-      if (!a || !Array.isArray(a.episodes)) throw new Error(`قائمة الحلقات غير صحيحة في العنصر ${i+1}.`);
-      return {title:String(a.title || a.name || `أنمي ${i+1}`),image:safeUrl(a.image || a.poster || ''),episodes:a.episodes.map((e,j) => {
+      if (!a || (a.episodes !== undefined && !Array.isArray(a.episodes))) throw new Error(`قائمة الحلقات غير صحيحة في العنصر ${i+1}.`);
+      return {title:String(a.title || a.name || `أنمي ${i+1}`),animeUrl:safeUrl(a.animeUrl),image:safeUrl(a.image || a.poster || ''),episodes:(a.episodes || []).map((e,j) => {
         if (!e || !Array.isArray(e.links)) throw new Error(`روابط الحلقة ${j+1} غير صحيحة.`);
         return {number:e.number ?? j+1,title:String(e.title || `الحلقة ${e.number ?? j+1}`),links:e.links.map(l => {
           if (!l || typeof l !== 'object') throw new Error('صيغة رابط غير صحيحة.');
@@ -23,11 +25,14 @@
       })};
     })};
   }
-  let library = sample;
-  let saved = false;
+  let library = location.protocol === 'file:' ? sample : {anime: []};
+  let libraryVersion = 0;
+  let managementToken = '';
+  let pendingDelete = null;
+  let deleting = false;
   let listView = false;
   try { listView = localStorage.getItem('anime-library-list-view') === 'true'; } catch {}
-  try { const stored = localStorage.getItem(KEY); if (stored) {library=normalize(JSON.parse(stored));saved=true;} } catch {}
+  try { const stored = localStorage.getItem(KEY); if (stored) library=normalize(JSON.parse(stored)); } catch {}
   const notify = text => { $('message').textContent=text; $('message').hidden=false; };
   const WATCHED_KEY = 'anime-library-watched-episodes-v1';
   let watched = new Set();
@@ -77,6 +82,7 @@
     $('count').textContent=ai===undefined?`${filtered.length} أنمي`:'';$('items').replaceChildren();
     $('items').className='grid'+(e?' links':a?' episodes':listView?' list':'');
     $('view').hidden=ai!==undefined;
+    $('anime-actions').hidden = ai === undefined || ei !== undefined;
     $('view').textContent=listView?'عرض بطاقات':'عرض قائمة';
     $('view').setAttribute('aria-pressed',String(listView));
     for(const item of filtered){
@@ -103,10 +109,78 @@
     }
     if(!filtered.length){const empty=document.createElement('div');empty.className='empty';empty.textContent=query?'لا توجد نتائج مطابقة.':'لا توجد عناصر في هذا المجلد حالياً.';$('items').append(empty);}
   }
+  function closeDelete() {
+    if (deleting) return;
+    $('delete-token').value = '';
+    pendingDelete = null;
+    $('delete-dialog').close();
+  }
+  $('delete-anime').addEventListener('click', () => {
+    const {ai,ei} = route();
+    if (ai === undefined || ei !== undefined) return;
+    pendingDelete = {...library.anime[ai]};
+    $('delete-name').textContent = pendingDelete.title;
+    $('delete-error').hidden = true;
+    $('delete-token').value = '';
+    $('delete-token-label').hidden = Boolean(managementToken);
+    $('delete-token-help').hidden = Boolean(managementToken);
+    $('delete-dialog').showModal();
+    (managementToken ? $('cancel-delete') : $('delete-token')).focus();
+  });
+  $('cancel-delete').addEventListener('click', closeDelete);
+  $('delete-dialog').addEventListener('cancel', event => { event.preventDefault(); closeDelete(); });
+  $('delete-form').addEventListener('submit', async event => {
+    event.preventDefault();
+    if (deleting || !pendingDelete) return;
+    let token = managementToken || $('delete-token').value.trim();
+    if (!token) {
+      $('delete-error').textContent = 'أدخل GitHub token للحفظ في المكتبة.';
+      $('delete-error').hidden = false;
+      $('delete-token').focus();
+      return;
+    }
+    deleting = true;
+    $('delete-token').value = '';
+    $('delete-error').hidden = true;
+    $('confirm-delete').disabled = $('cancel-delete').disabled = true;
+    $('confirm-delete').textContent = 'جارٍ الحذف…';
+    try {
+      const result = await deleteAnimeFromRepository({anime: pendingDelete, token});
+      managementToken = token;
+      library = normalize(result.library);
+      libraryVersion++;
+      try { localStorage.setItem(KEY, JSON.stringify(library)); } catch {}
+      deleting = false;
+      closeDelete();
+      location.hash = '';
+      $('search').value = '';
+      render();
+      notify(result.alreadyDeleted ? 'الأنمي محذوف بالفعل. تم تحديث المكتبة.' : 'تم حذف الأنمي من المكتبة على GitHub.');
+      $('title').tabIndex = -1;
+      $('title').focus();
+    } catch (error) {
+      managementToken = '';
+      $('delete-token-label').hidden = false;
+      $('delete-token-help').hidden = false;
+      $('delete-error').textContent = error.name === 'TimeoutError' ? 'انتهت مهلة الاتصال. أعد المحاولة للتحقق من نتيجة الحذف.' : error.message;
+      $('delete-error').hidden = false;
+    } finally {
+      token = '';
+      deleting = false;
+      $('confirm-delete').disabled = $('cancel-delete').disabled = false;
+      $('confirm-delete').textContent = 'حذف من المكتبة';
+    }
+  });
   $('search').addEventListener('input',render);
   $('sort').addEventListener('change',render);
   $('view').addEventListener('click',()=>{listView=!listView;try{localStorage.setItem('anime-library-list-view',String(listView));}catch{}render();});
   window.addEventListener('hashchange',()=>{$('search').value='';render();});
   render();
-  if(!saved && location.protocol!=='file:') fetch('library.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{library=normalize(data);render();}).catch(()=>{});
+  if(location.protocol!=='file:') {
+    const version = libraryVersion;
+    fetch(`https://raw.githubusercontent.com/malqammaz/anime-library/main/library.json?v=${Date.now()}`, {cache:'no-store'})
+      .then(r=>{if(!r.ok)throw Error();return r.json();})
+      .then(data=>{if(version !== libraryVersion)return;library=normalize(data);try{localStorage.setItem(KEY,JSON.stringify(library));}catch{}render();})
+      .catch(()=>{if(version === libraryVersion)notify('تعذر جلب أحدث مكتبة. تحقق من الاتصال وأعد تحميل الصفحة.');});
+  }
 })();

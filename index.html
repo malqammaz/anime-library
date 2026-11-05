@@ -7,7 +7,20 @@
 <main><div class="intro"><div><span class="eyebrow">مساحتك الخاصة للأنمي</span><h1 id="title">مكتبة الأنمي</h1><p id="subtitle">تصفّح الأنميات، افتح الحلقات، واختَر رابط المشاهدة.</p></div><div id="stats" class="stats" aria-label="إحصائيات المكتبة"></div></div>
 <nav id="breadcrumbs" aria-label="مسار المجلدات"></nav>
 <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث عن أنمي…" aria-label="بحث"></label><div class="tools"><span id="count" role="status"></span><label class="sort-label">ترتيب <select id="sort" aria-label="ترتيب العناصر"><option value="default">الافتراضي</option><option value="name">الاسم</option></select></label><button id="view" class="secondary" aria-pressed="false">عرض قائمة</button></div></div>
+<div id="anime-actions" class="anime-actions" hidden><button id="delete-anime" class="danger secondary" type="button">حذف الأنمي</button></div>
 <p id="message" role="status" hidden></p><div id="items" class="grid"></div>
 </main><footer><span>مجلدات مرتّبة. مشاهدة أسهل.</span><span>حالة المشاهدة محفوظة على جهازك</span></footer>
-</div><script src="app.js"></script>
+</div>
+<dialog id="delete-dialog" aria-labelledby="delete-heading" aria-describedby="delete-description">
+<form id="delete-form">
+<h2 id="delete-heading">حذف الأنمي؟</h2>
+<p id="delete-name" class="delete-name"></p>
+<p id="delete-description">سيُحذف الأنمي وحلقاته وروابطه من المكتبة المشتركة على GitHub.</p>
+<label id="delete-token-label" class="token-label" for="delete-token">GitHub token<input id="delete-token" type="password" autocomplete="off" spellcheck="false" placeholder="أدخل التوكن" dir="ltr"></label>
+<p id="delete-token-help" class="token-help">استخدم Fine-grained token لمستودع anime-library فقط، بصلاحية Contents: Read and write. يبقى في ذاكرة الصفحة ويُمسح عند إغلاقها أو تحديثها.</p>
+<p id="delete-error" class="delete-error" role="alert" hidden></p>
+<div class="dialog-actions"><button id="cancel-delete" type="button" class="secondary">إلغاء</button><button id="confirm-delete" type="submit" class="danger">حذف من المكتبة</button></div>
+</form>
+</dialog>
+<script type="module" src="app.js"></script>
 </body></html>

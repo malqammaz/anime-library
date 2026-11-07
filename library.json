@@ -291,6 +291,42 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 6,
+          "title": "الحلقة 6",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/WHJggD6R#VHdTR5Fe8onlLQoAD-AjwI7v1USmIH_Lcblww_9dd-0",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/keb1s53q5xml",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/N8P5Q91Snn",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/WHJggD6R#VHdTR5Fe8onlLQoAD-AjwI7v1USmIH_Lcblww_9dd-0",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/keb1s53q5xml",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx195604-tSZcfKbVqSEG.jpg"

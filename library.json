@@ -2643,6 +2643,48 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 7,
+          "title": "الحلقة 7",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/2PoBmIJR#3Y1hDyhe3W613yadaZPUtsY9eYmDftXF7m7-n2Yrlqo",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/si0qm7ycupwh",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/IP9oJidY08",
+              "quality": "FHD"
+            },
+            {
+              "label": "streamruby FHD",
+              "type": "player",
+              "url": "https://streamruby.com/e/yfq7v8izil5b",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/2PoBmIJR#3Y1hDyhe3W613yadaZPUtsY9eYmDftXF7m7-n2Yrlqo",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/si0qm7ycupwh",
+              "quality": ""
+            }
+          ]
         }
       ],
       "animeUrl": "https://yalanime.com/anime/%D8%A7%D9%86%D9%85%D9%8A-overgeared-2026-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D8%A7%D9%85%D9%84/",

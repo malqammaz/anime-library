@@ -1463,6 +1463,36 @@
               "type": "host-link",
               "url": "https://mega.nz/file/DKIwAKrY#fAxsX7cpCiKC81otcE3Vu8-aGcjJk5IS2PEx5OvkRWA",
               "quality": ""
+            },
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/CGp1VYqJ#bIF_o-rj8uTNXQ7vWCyETBQb4sW_NIfh8o3PWXPOt4M",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/65n2ehnsw873",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/HlnkxlfC35",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/CGp1VYqJ#bIF_o-rj8uTNXQ7vWCyETBQb4sW_NIfh8o3PWXPOt4M",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/65n2ehnsw873",
+              "quality": ""
             }
           ]
         },

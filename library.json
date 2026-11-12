@@ -1801,6 +1801,42 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 20,
+          "title": "الحلقة 20",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/qaRQmY4Z#8PXrM2s7Rl_Obwewh0OiECZqb1pA2QeDB3Ml_2ozy2A",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/qe3du33c4jia",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/q42CaPxmma",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/qaRQmY4Z#8PXrM2s7Rl_Obwewh0OiECZqb1pA2QeDB3Ml_2ozy2A",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/qe3du33c4jia",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/08/158711l.jpg"

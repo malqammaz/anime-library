@@ -1264,6 +1264,18 @@
               "type": "host-link",
               "url": "https://dood.to/d/aw5cayz026x3",
               "quality": ""
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/oHDvsfGeiKqOH",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/oHDvsfGeiKqOH",
+              "quality": ""
             }
           ]
         }

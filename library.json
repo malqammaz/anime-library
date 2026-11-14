@@ -327,6 +327,54 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 7,
+          "title": "الحلقة 7",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/3TYhRTiD#sJ69DYPurQWpAsmQxIPjVgnckGqVGzg_LLdWER6KC3w",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/Yncwt7LWFDPoJ",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/pkhw6a8pmmkh",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/oKpiACBUfP",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/3TYhRTiD#sJ69DYPurQWpAsmQxIPjVgnckGqVGzg_LLdWER6KC3w",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/Yncwt7LWFDPoJ",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/pkhw6a8pmmkh",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx195604-tSZcfKbVqSEG.jpg"
@@ -577,6 +625,60 @@
               "label": "dood",
               "type": "host-link",
               "url": "https://dood.to/d/d7hdfapz29s0",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "الحلقة 6",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/vK4HgIoD#2FaiveMt5WqR5zP0EKFrNS-gug2J6HsqUzwDPuuw0bg",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/qxhhqR7GYTFif",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/k0ko2manfod5",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/RAZ0g9sX9N",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-x72ed77kja6s.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/vK4HgIoD#2FaiveMt5WqR5zP0EKFrNS-gug2J6HsqUzwDPuuw0bg",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/qxhhqR7GYTFif",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/k0ko2manfod5",
               "quality": ""
             }
           ]

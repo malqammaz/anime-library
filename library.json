@@ -2101,6 +2101,42 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 21,
+          "title": "الحلقة 21",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/qGBiTBBa#VM6XSpYSqlzVBy6BIYfYUZzQ2CgkKF_k7nqv2cAzoSg",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/2i8qsv68hyaw",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/FtEOLn6bo1",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/qGBiTBBa#VM6XSpYSqlzVBy6BIYfYUZzQ2CgkKF_k7nqv2cAzoSg",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/2i8qsv68hyaw",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/08/158711l.jpg"

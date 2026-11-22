@@ -375,6 +375,42 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 8,
+          "title": "الحلقة 8",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/2bZlXJIB#WlqDPEDGsV-2aP5gzTDiv17oZF3UAx9LPYZRq4OmPto",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/y6c2t4gtvgan",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/sm50vBM8mc",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/2bZlXJIB#WlqDPEDGsV-2aP5gzTDiv17oZF3UAx9LPYZRq4OmPto",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/y6c2t4gtvgan",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx195604-tSZcfKbVqSEG.jpg"

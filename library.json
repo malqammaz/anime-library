@@ -411,6 +411,24 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 9,
+          "title": "الحلقة 9",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/mOJkCRIA#figqVCq_HNxh8d7kJDRQizsIn7TJrU_ppKSRjM6fH2k",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/mOJkCRIA#figqVCq_HNxh8d7kJDRQizsIn7TJrU_ppKSRjM6fH2k",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx195604-tSZcfKbVqSEG.jpg"
@@ -1160,6 +1178,48 @@
               "label": "dood",
               "type": "host-link",
               "url": "https://dood.to/d/m9zlpjvc6atn",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "الحلقة 8",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/vWZzVbIS#SUmN8VHlstcU0jcAALvh4V0GxGPZvmI6N9UaFcpzM1o",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/th2ld0bvaea4",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/R6wrYNEDeD",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-zl3u2lf2lz7t.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/vWZzVbIS#SUmN8VHlstcU0jcAALvh4V0GxGPZvmI6N9UaFcpzM1o",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/th2ld0bvaea4",
               "quality": ""
             }
           ]
@@ -3240,6 +3300,42 @@
               "label": "dood",
               "type": "host-link",
               "url": "https://dood.to/d/vc95qgjwhnax",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "الحلقة 9",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/PW4E2RSS#4CVIdiXUROka5I2uQ1SjzhDuwk8H8Dzcaxv-jnS3AXo",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/ae0mdtqcsglg",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/jN3bVD6J7K",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/PW4E2RSS#4CVIdiXUROka5I2uQ1SjzhDuwk8H8Dzcaxv-jnS3AXo",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/ae0mdtqcsglg",
               "quality": ""
             }
           ]

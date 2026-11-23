@@ -427,6 +427,24 @@
               "type": "host-link",
               "url": "https://mega.nz/file/mOJkCRIA#figqVCq_HNxh8d7kJDRQizsIn7TJrU_ppKSRjM6fH2k",
               "quality": ""
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/8lpmtgqh7buz",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/RZ2ehotSHp",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/8lpmtgqh7buz",
+              "quality": ""
             }
           ]
         }

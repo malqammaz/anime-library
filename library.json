@@ -2359,6 +2359,54 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 22,
+          "title": "الحلقة 22",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/rPgRCYqI#ugA89K2KZ1yDAhsRCuVzrzQq7jV0bnMbUJYKDa4BEwY",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/rHQHLSTCVDLv5",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/kd9tfk9jj7a5",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/r8KZIHjEs7",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/rPgRCYqI#ugA89K2KZ1yDAhsRCuVzrzQq7jV0bnMbUJYKDa4BEwY",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/rHQHLSTCVDLv5",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/kd9tfk9jj7a5",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/08/158711l.jpg"

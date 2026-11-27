@@ -1,7 +1,575 @@
 {
   "anime": [
     {
-      "animeUrl":"https://yalanime.com/%d8%a3%d9%86%d9%85%d9%8a-fool-night-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1/"
+      "animeUrl": "https://yalanime.com/anime/%d8%a3%d9%86%d9%85%d9%8a-fool-night-2026-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d9%83%d8%a7%d9%85%d9%84/",
+      "title": "Fool Night",
+      "image": "https://yalanime.com/wp-content/uploads/2026/11/bx213457-gN5p1GZjK3zi.jpg",
+      "episodes": [
+        {
+          "number": 1,
+          "title": "الحلقة 1",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/TK4GTSZR#CG_DEttWn_t_Zvf_yeMzv0RJxD2VreHXFkC5nMosNro",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/kk2xqSpfRjoZK",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/bp7zob6x5v8e",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/bax7cFnwEH",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/TK4GTSZR#CG_DEttWn_t_Zvf_yeMzv0RJxD2VreHXFkC5nMosNro",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/kk2xqSpfRjoZK",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/bp7zob6x5v8e",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الحلقة 2",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/LTIGXRJK#M39J3VELzNBLH5ynSWABN0nzYYEl5fimiPx_CthR6Es",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/xOngP3AgL4sMf",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/2vfcv2590kyw",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/iSZfkPUT1q",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-b5fjigmzrarg.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/LTIGXRJK#M39J3VELzNBLH5ynSWABN0nzYYEl5fimiPx_CthR6Es",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/xOngP3AgL4sMf",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/2vfcv2590kyw",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "الحلقة 3",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/GGQGAQhA#hX54cfNwdeSf2xt4JQvXp2_YHXk4vGr2W-05xO0QSrA",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/reDAMbNcs5SzA",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/9s6qh52jokyk",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/FvnJG9QlD1",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-fe9nmecze6qc.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/GGQGAQhA#hX54cfNwdeSf2xt4JQvXp2_YHXk4vGr2W-05xO0QSrA",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/reDAMbNcs5SzA",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/9s6qh52jokyk",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "الحلقة 4",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/XXZAxCqB#sPaFQ6c-LDJubQJSIRJZHTAI2vL3_7hCRV25ee_8R2Y",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/a2SOE1LLtgPQO",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/ri164u14cbwo",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/C9UXhq0lJN",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-rxrv65iocwoe.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/XXZAxCqB#sPaFQ6c-LDJubQJSIRJZHTAI2vL3_7hCRV25ee_8R2Y",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/a2SOE1LLtgPQO",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/ri164u14cbwo",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "الحلقة 5",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/qPRj3biZ#OZBCtwR6WNQ9hp7gbfGrNOtdr_4v9FaEbYfdBRH2ejY",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/v92xkCnMUstnr",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/p8dwjrt5p5hl",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/BHa4UqB5XK",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-3pyre8cwz66t.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/qPRj3biZ#OZBCtwR6WNQ9hp7gbfGrNOtdr_4v9FaEbYfdBRH2ejY",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/v92xkCnMUstnr",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/p8dwjrt5p5hl",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "الحلقة 6",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/qTBinSCS#Nj5aasdu1sGeMBMIysB1DR8vxgVLTWneTGUgW6HP-S8",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/47dkvTGWCTatw",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/y3wwkoctzqfe",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/ahSPxFvuOJ",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-wjyavgsrd8v1.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/qTBinSCS#Nj5aasdu1sGeMBMIysB1DR8vxgVLTWneTGUgW6HP-S8",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/47dkvTGWCTatw",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/y3wwkoctzqfe",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "الحلقة 7",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/yGAnTaRZ#TKTvovmEyq4e7s8vsVcOb-bcyw9TCkDNaSDVOPIh-VA",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/tvgvvmxlvdvw",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/FwQZFhmnSz",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-te6a3k1wd7t1.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/yGAnTaRZ#TKTvovmEyq4e7s8vsVcOb-bcyw9TCkDNaSDVOPIh-VA",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/tvgvvmxlvdvw",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "الحلقة 8",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/2XolES4A#DJdrIBfO3SzmuFb-J8LIqie3Fm4Z1KFz__v8Q_XY5Ao",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/f1XHJwmYCFTMc",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/ingvhfi9yrnf",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/XKzeJHLNch",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-nfzhl083ff1f.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/2XolES4A#DJdrIBfO3SzmuFb-J8LIqie3Fm4Z1KFz__v8Q_XY5Ao",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/f1XHJwmYCFTMc",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/ingvhfi9yrnf",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "الحلقة 9",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/uCoViaDY#1Z9-MAlBjqZplHUYwhnAaVMW_VVFaa_PSkTX_obMJK0",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/plxpsj6qkhro",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/Mu5xVc2KYn",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/uCoViaDY#1Z9-MAlBjqZplHUYwhnAaVMW_VVFaa_PSkTX_obMJK0",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/plxpsj6qkhro",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "الحلقة 10",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/vep0WTBJ#8krmQticGCBJ6kNlwV3kd6WwCIXQoZMNa3Qr8Y4JCA4",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/7m7gp212i7s3",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/fxGZ2VcQ2t",
+              "quality": "FHD"
+            },
+            {
+              "label": "mp4upload FHD",
+              "type": "player",
+              "url": "https://www.mp4upload.com/embed-rd31s65vttwg.html",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/vep0WTBJ#8krmQticGCBJ6kNlwV3kd6WwCIXQoZMNa3Qr8Y4JCA4",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/7m7gp212i7s3",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "الحلقة 11",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/HTJiUbqR#xRZRhP_CdvZpqMgRFPX2Jir3G3GPQaCEBoP5JrqjtM0",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/syu4r5kwipfb",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/E0yYjpGTSQ",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/HTJiUbqR#xRZRhP_CdvZpqMgRFPX2Jir3G3GPQaCEBoP5JrqjtM0",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/syu4r5kwipfb",
+              "quality": ""
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "الحلقة 12",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/CKhAxZKB#X0xfQXseUU1dncBkXEGO2hq0FNJSKHkPkMau6WoCTB4",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/klx7lt2ngg78",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/FkkYiTdfq4",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/CKhAxZKB#X0xfQXseUU1dncBkXEGO2hq0FNJSKHkPkMau6WoCTB4",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/klx7lt2ngg78",
+              "quality": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "animeUrl": "https://yalanime.com/anime/%D8%A3%D9%86%D9%85%D9%8A-black-clover-season-2-2026-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D8%A7%D9%85%D9%84/",

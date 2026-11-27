@@ -2227,6 +2227,54 @@
               "quality": ""
             }
           ]
+        },
+        {
+          "number": 9,
+          "title": "الحلقة 9",
+          "links": [
+            {
+              "label": "mega FHD",
+              "type": "player",
+              "url": "https://mega.nz/embed/iHRkxI5Z#qKjjHIS9rjFBluz7UWTHt3rXMURmBz7zU_r6BLnjnko",
+              "quality": "FHD"
+            },
+            {
+              "label": "vidara FHD",
+              "type": "player",
+              "url": "https://vidara.to/e/KjWToadxx2LkU",
+              "quality": "FHD"
+            },
+            {
+              "label": "dood FHD",
+              "type": "player",
+              "url": "https://dood.to/e/itkjs3bcycdr",
+              "quality": "FHD"
+            },
+            {
+              "label": "vik1ngfile FHD",
+              "type": "player",
+              "url": "https://vik1ngfile.site/f/Lax5g2MU3a",
+              "quality": "FHD"
+            },
+            {
+              "label": "mega",
+              "type": "host-link",
+              "url": "https://mega.nz/file/iHRkxI5Z#qKjjHIS9rjFBluz7UWTHt3rXMURmBz7zU_r6BLnjnko",
+              "quality": ""
+            },
+            {
+              "label": "vidara",
+              "type": "host-link",
+              "url": "https://vidara.to/KjWToadxx2LkU",
+              "quality": ""
+            },
+            {
+              "label": "dood",
+              "type": "host-link",
+              "url": "https://dood.to/d/itkjs3bcycdr",
+              "quality": ""
+            }
+          ]
         }
       ],
       "image": "https://yalanime.com/wp-content/uploads/2026/10/bx178083-bg7pg6TCHwtG.jpg"

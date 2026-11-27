@@ -19,7 +19,7 @@ function latestEpisodes(library) {
   for (const show of library.anime) {
     const key = pageKey(show?.animeUrl);
     if (!key) continue;
-    const latest = [...(show.episodes ?? [])].sort((a, b) => numberOf(b.number) - numberOf(a.number)).slice(0, 2);
+    const latest = [...(show.episodes ?? [])].sort((a, b) => numberOf(b.number) - numberOf(a.number)).slice(0, 20);
     for (const episode of latest) {
       const id = createHash('sha256').update(JSON.stringify([key, numberOf(episode.number)])).digest('hex');
       entries.set(`episode-${id}`, {show, episode});

@@ -11,7 +11,7 @@ const library = numbers => ({anime: [{
   episodes: numbers.map(episode),
 }]});
 
-test('downloads the latest two episodes, reuses assets and prunes after updating links', async () => {
+test('downloads the latest 20 episodes, reuses assets and prunes after updating links', async () => {
   const assets = [], downloaded = [], deleted = [], failures = [], logs = [];
   const storage = {
     list: async () => [...assets],
@@ -29,31 +29,31 @@ test('downloads the latest two episodes, reuses assets and prunes after updating
       return {path: 'fixture.mp4', extension: '.mp4'};
     },
   };
-  const first = library([1, 3, 2]);
+  const first = library([1, 21, 2, ...Array.from({length: 18}, (_, i) => i + 3)]);
   const firstRun = await prepareVideos(first, options);
   firstRun.apply(first);
-  assert.deepEqual(first.anime[0].episodes.map(e => e.links.length), [1, 2, 2]);
-  assert.deepEqual(downloaded, Array(2).fill(`https://mega.nz/#!12345678!${'k'.repeat(43)}`));
-  assert.equal(firstRun.linkedCount, 2);
-  assert.deepEqual(logs.filter(message => message.startsWith('[Video 1/2]')), [
-    '[Video 1/2] Anime, episode 3: Downloading from MEGA',
-    '[Video 1/2] Anime, episode 3: Uploading to GitHub Releases',
-    '[Video 1/2] Anime, episode 3: Upload complete',
+  assert.deepEqual(first.anime[0].episodes.slice(0, 3).map(e => e.links.length), [1, 2, 2]);
+  assert.deepEqual(downloaded, Array(20).fill(`https://mega.nz/#!12345678!${'k'.repeat(43)}`));
+  assert.equal(firstRun.linkedCount, 20);
+  assert.deepEqual(logs.filter(message => message.startsWith('[Video 1/20]')), [
+    '[Video 1/20] Anime, episode 21: Downloading from MEGA',
+    '[Video 1/20] Anime, episode 21: Uploading to GitHub Releases',
+    '[Video 1/20] Anime, episode 21: Upload complete',
   ]);
 
   const unchanged = structuredClone(first);
   const secondRun = await prepareVideos(first, options);
   secondRun.apply(first);
   assert.deepEqual(first, unchanged);
-  assert.equal(downloaded.length, 2);
-  assert.equal(logs.at(-1), '[Video 2/2] Anime, episode 2: Already on GitHub, skipping download');
+  assert.equal(downloaded.length, 20);
+  assert.equal(logs.at(-1), '[Video 20/20] Anime, episode 2: Already on GitHub, skipping download');
 
-  first.anime[0].episodes.push(episode(4));
+  first.anime[0].episodes.push(episode(22));
   const next = await prepareVideos(first, options);
-  assert.equal(downloaded.length, 3);
+  assert.equal(downloaded.length, 21);
   assert.deepEqual(deleted, []);
   next.apply(first);
-  assert.deepEqual(first.anime[0].episodes.map(e => e.links.length), [1, 2, 1, 2]);
+  assert.deepEqual(first.anime[0].episodes.slice(0, 3).map(e => e.links.length), [1, 2, 1]);
   assert.deepEqual(first.anime[0].episodes[2].links, [original]);
   await next.prune();
   const expired = assets.find(asset => asset.browser_download_url === unchanged.anime[0].episodes[2].links[0].url);

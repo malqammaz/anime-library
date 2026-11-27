@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبتي · الأنمي</title><link rel="stylesheet" href="style.css?v=20261105-delete"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مكتبتي · الأنمي</title><link rel="stylesheet" href="style.css?v=20261127-player"></head>
 <body>
 <div class="shell">
 <header><a class="brand" href="#"><span class="brand-icon" aria-hidden="true">▤</span><span>مكتبتي<small>ANIME LIBRARY</small></span></a></header>
@@ -22,5 +22,9 @@
 <div class="dialog-actions"><button id="cancel-delete" type="button" class="secondary">إلغاء</button><button id="confirm-delete" type="submit" class="danger">حذف من المكتبة</button></div>
 </form>
 </dialog>
-<script type="module" src="app.js?v=20261105-delete"></script>
+<dialog id="video-dialog" aria-labelledby="player-heading">
+<div class="player-header"><h2 id="player-heading">مشغّل الحلقة</h2><button type="button" id="close-player" class="secondary" autofocus>إغلاق</button></div>
+<iframe id="video-frame" title="مشغّل فيديو الحلقة" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</dialog>
+<script type="module" src="app.js?v=20261127-player"></script>
 </body></html>

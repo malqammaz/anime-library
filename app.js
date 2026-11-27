@@ -5,6 +5,7 @@ import {deleteAnimeFromRepository} from './github-library.js';
   const KEY = 'anime-library-v1';
   const $ = id => document.getElementById(id);
   const safeUrl = value => { try { const u = new URL(value); return /^https?:$/.test(u.protocol) ? u.href : null; } catch { return null; } };
+  const videoAsset = /^https:\/\/github\.com\/malqammaz\/anime-library\/releases\/download\/episode-videos\/(episode-[a-f0-9]{64}\.(?:mp4|mkv|webm|mov|m4v|avi))$/;
   const sample = { anime: [{ title: 'The Vermilion Mask', episodes: [
     { number: 1, title: 'الحلقة 1', links: [{label:'Dood',quality:'FHD',url:'https://dood.to/e/n0suxtoym77y'}] },
     { number: 2, title: 'الحلقة 2', links: [{label:'Dood',quality:'FHD',url:'https://dood.to/e/nclsplww5sid'}] },
@@ -76,7 +77,14 @@ import {deleteAnimeFromRepository} from './github-library.js';
     $('breadcrumbs').replaceChildren();crumb('المكتبة','#');
     if(a){crumb('／');crumb(a.title,`#anime/${ai}`);}if(e){crumb('／');crumb(e.title);}
     const query=$('search').value.trim().toLowerCase();
-    const entries=e?e.links.map(l=>({title:l.label,meta:l.type==='host-link'?'صفحة استضافة · فتح المشاهدة':'رابط مشاهدة · فتح السيرفر',url:l.url,badge:l.quality,icon:'▷'})):a?a.episodes.map((ep,i)=>({title:ep.title,episodeKey:episodeKey(a,ep),meta:'عرض السيرفرات',href:`#anime/${ai}/episode/${i}`,icon:String(ep.number).padStart(2,'0')})):library.anime.map((item,i)=>({title:item.title,image:item.image,showViewed:showWatched(item),meta:'تصفّح الحلقات',href:`#anime/${i}`,icon:'▤'}));
+    const entries=e?e.links.map(l=>{
+      const asset = l.url.match(videoAsset)?.[1];
+      return {
+        title:asset?'شاهد الآن':l.label,
+        meta:asset?'تشغيل الفيديو داخل المكتبة':l.type==='host-link'?'صفحة استضافة · فتح المشاهدة':'رابط مشاهدة · فتح السيرفر',
+        url:l.url,badge:l.quality,icon:'▷',asset,
+      };
+    }):a?a.episodes.map((ep,i)=>({title:ep.title,episodeKey:episodeKey(a,ep),meta:'عرض السيرفرات',href:`#anime/${ai}/episode/${i}`,icon:String(ep.number).padStart(2,'0')})):library.anime.map((item,i)=>({title:item.title,image:item.image,showViewed:showWatched(item),meta:'تصفّح الحلقات',href:`#anime/${i}`,icon:'▤'}));
     const filtered=entries.filter(x=>(x.title+' '+x.meta+' '+(x.badge||'')).toLowerCase().includes(query));
     if($('sort').value==='name')filtered.sort((x,y)=>x.title.localeCompare(y.title,'ar',{numeric:true}));
     $('count').textContent=ai===undefined?`${filtered.length} أنمي`:'';$('items').replaceChildren();
@@ -88,6 +96,16 @@ import {deleteAnimeFromRepository} from './github-library.js';
     for(const item of filtered){
       const card=document.createElement('article');card.className='card';
       const link=document.createElement('a');link.className='card-link';link.href=item.url || item.href;card.append(link);
+      if (item.asset) {
+        link.setAttribute('aria-haspopup', 'dialog');
+        link.addEventListener('click', event => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          $('player-heading').textContent = `${a.title} · ${e.title}`;
+          $('video-dialog').showModal();
+          $('video-frame').src = `video-player.html?asset=${encodeURIComponent(item.asset)}`;
+        });
+      }
       const add=(tag,cls,text)=>{const el=document.createElement(tag);el.className=cls;el.textContent=text;link.append(el);};
       add('span','icon',item.icon);add('span','arrow','←');add('h2','',item.title);add('span','meta',item.meta);
       if(item.image){const img=document.createElement('img');img.className='cover';img.alt=item.title;img.loading='lazy';img.referrerPolicy='no-referrer';img.src=item.image;img.addEventListener('error',()=>{img.remove();card.classList.remove('has-cover');});link.prepend(img);card.classList.add('has-cover');}
@@ -109,6 +127,8 @@ import {deleteAnimeFromRepository} from './github-library.js';
     }
     if(!filtered.length){const empty=document.createElement('div');empty.className='empty';empty.textContent=query?'لا توجد نتائج مطابقة.':'لا توجد عناصر في هذا المجلد حالياً.';$('items').append(empty);}
   }
+  $('close-player').addEventListener('click', () => $('video-dialog').close());
+  $('video-dialog').addEventListener('close', () => $('video-frame').removeAttribute('src'));
   function closeDelete() {
     if (deleting) return;
     $('delete-token').value = '';
@@ -174,7 +194,11 @@ import {deleteAnimeFromRepository} from './github-library.js';
   $('search').addEventListener('input',render);
   $('sort').addEventListener('change',render);
   $('view').addEventListener('click',()=>{listView=!listView;try{localStorage.setItem('anime-library-list-view',String(listView));}catch{}render();});
-  window.addEventListener('hashchange',()=>{$('search').value='';render();});
+  window.addEventListener('hashchange',()=>{
+    if ($('video-dialog').open) $('video-dialog').close();
+    $('search').value='';
+    render();
+  });
   render();
   if(location.protocol!=='file:') {
     const version = libraryVersion;

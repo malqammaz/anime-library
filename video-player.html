@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مشغّل الحلقة</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; color: white; font: 15px system-ui, sans-serif; }
+  video { display: block; width: 100%; height: 100%; }
+  #error { position: absolute; inset: 0; margin: 0; padding: 16px; display: grid; place-items: center; }
+  #error[hidden] { display: none; }
+</style>
+</head>
+<body>
+<video controls autoplay playsinline aria-label="فيديو الحلقة"></video>
+<p id="error" role="alert" hidden>تعذّر تشغيل هذه الحلقة في المتصفح.</p>
+<script>
+  const player = document.querySelector('video');
+  const error = document.getElementById('error');
+  const asset = new URLSearchParams(location.search).get('asset') ?? '';
+  player.addEventListener('error', () => { error.hidden = false; });
+  if (/^episode-[a-f0-9]{64}\.(?:mp4|mkv|webm|mov|m4v|avi)$/.test(asset)) {
+    player.src = 'https://github.com/malqammaz/anime-library/releases/download/episode-videos/' + asset;
+  } else {
+    error.hidden = false;
+  }
+</script>
+</body>
+</html>

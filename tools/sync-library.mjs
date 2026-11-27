@@ -2,6 +2,7 @@ import {readFile, writeFile, appendFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {DOMParser} from 'linkedom';
 import {mergeCollected, pageKey} from './library-merge.mjs';
+import {prepareVideos, releaseStorage} from './video-mirror.mjs';
 
 const SITE = 'https://yalanime.com';
 const REPOSITORY = 'malqammaz/anime-library';
@@ -81,12 +82,13 @@ function decodeLibrary(file) {
   if (!Array.isArray(library.anime)) throw new Error('Invalid library format');
   return library;
 }
-export async function saveCollected(collected, request) {
+export async function saveCollected(collected, request, applyVideos) {
   for (let attempt = 0; attempt < 3; attempt++) {
     // Re-read immediately before writing so phone edits and new entries survive.
     const file = await request('GET');
     const latest = decodeLibrary(file);
     const merged = mergeCollected(latest, collected);
+    applyVideos?.(merged.library);
     if (JSON.stringify(latest) === JSON.stringify(merged.library)) return {unchanged: true, ...merged.counts};
     try {
       await request('PUT', {
@@ -139,8 +141,20 @@ export async function main() {
       console.error(`Anime ${index + 1} failed: ${error.message}`);
     }
   }
-  const saved = dryRun ? {dryRun: true, ...mergeCollected(library, collected).counts} : await saveCollected(collected, request);
-  const report = {saved, extracted: collected.length, failures, skipped};
+  const merged = mergeCollected(library, collected);
+  let videos;
+  if (!dryRun && process.env.ENABLE_VIDEO_MIRROR === 'true') {
+    try {
+      videos = await prepareVideos(merged.library, {
+        storage: releaseStorage(REPOSITORY, token), deadline: deadline + 12 * 60 * 1000, failures,
+      });
+    } catch (error) {
+      failures.push({error: `Video mirror failed: ${error.message}`});
+    }
+  }
+  const saved = dryRun ? {dryRun: true, ...merged.counts} : await saveCollected(collected, request, videos?.apply);
+  await videos?.prune();
+  const report = {saved, extracted: collected.length, ...(videos && {videoLinks: videos.linkedCount}), failures, skipped};
   await writeFile('sync-report.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));
   if (process.env.GITHUB_STEP_SUMMARY) {

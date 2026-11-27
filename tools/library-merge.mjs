@@ -7,7 +7,7 @@ export function pageKey(value) {
     return `${url.hostname.replace(/^www\./, '').toLowerCase()}${decodeURIComponent(url.pathname).replace(/\/+$/, '')}`;
   } catch { return null; }
 }
-const numberOf = value => {
+export const numberOf = value => {
   const text = String(value ?? '').replace(/[٠-٩]/g, c => String('٠١٢٣٤٥٦٧٨٩'.indexOf(c))).trim();
   if (!/^\d+(?:\.\d+)?$/.test(text)) throw new Error('Invalid episode number');
   return Number(text);

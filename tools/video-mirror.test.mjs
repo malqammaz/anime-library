@@ -12,7 +12,7 @@ const library = numbers => ({anime: [{
 }]});
 
 test('downloads the latest two episodes, reuses assets and prunes after updating links', async () => {
-  const assets = [], downloaded = [], deleted = [], failures = [];
+  const assets = [], downloaded = [], deleted = [], failures = [], logs = [];
   const storage = {
     list: async () => [...assets],
     async upload(name) {
@@ -23,7 +23,7 @@ test('downloads the latest two episodes, reuses assets and prunes after updating
     async remove(id) { deleted.push(id); },
   };
   const options = {
-    storage, deadline: Date.now() + 60000, failures,
+    storage, deadline: Date.now() + 60000, failures, log: message => logs.push(message),
     async download(url) {
       downloaded.push(url);
       return {path: 'fixture.mp4', extension: '.mp4'};
@@ -35,12 +35,18 @@ test('downloads the latest two episodes, reuses assets and prunes after updating
   assert.deepEqual(first.anime[0].episodes.map(e => e.links.length), [1, 2, 2]);
   assert.deepEqual(downloaded, Array(2).fill(`https://mega.nz/#!12345678!${'k'.repeat(43)}`));
   assert.equal(firstRun.linkedCount, 2);
+  assert.deepEqual(logs.filter(message => message.startsWith('[Video 1/2]')), [
+    '[Video 1/2] Anime, episode 3: Downloading from MEGA',
+    '[Video 1/2] Anime, episode 3: Uploading to GitHub Releases',
+    '[Video 1/2] Anime, episode 3: Upload complete',
+  ]);
 
   const unchanged = structuredClone(first);
   const secondRun = await prepareVideos(first, options);
   secondRun.apply(first);
   assert.deepEqual(first, unchanged);
   assert.equal(downloaded.length, 2);
+  assert.equal(logs.at(-1), '[Video 2/2] Anime, episode 2: Already on GitHub, skipping download');
 
   first.anime[0].episodes.push(episode(4));
   const next = await prepareVideos(first, options);
@@ -50,6 +56,35 @@ test('downloads the latest two episodes, reuses assets and prunes after updating
   assert.deepEqual(first.anime[0].episodes.map(e => e.links.length), [1, 2, 1, 2]);
   assert.deepEqual(first.anime[0].episodes[2].links, [original]);
   await next.prune();
-  assert.deepEqual(deleted, [2]);
+  const expired = assets.find(asset => asset.browser_download_url === unchanged.anime[0].episodes[2].links[0].url);
+  assert.deepEqual(deleted, [expired.id]);
+  assert.deepEqual(failures, []);
+});
+
+test('limits simultaneous downloads to three', {timeout: 3000}, async () => {
+  const data = library([1, 2]);
+  data.anime.push({...library([1, 2]).anime[0], animeUrl: 'https://yalanime.com/anime/another/'});
+  let active = 0, peak = 0;
+  const ready = Promise.withResolvers();
+  const failures = [];
+  const result = await prepareVideos(data, {
+    deadline: Date.now() + 60000,
+    failures,
+    log() {},
+    storage: {
+      list: async () => [],
+      upload: async name => ({id: name, name, state: 'uploaded', size: 100, browser_download_url: `https://github.com/${name}`}),
+    },
+    async download() {
+      peak = Math.max(peak, ++active);
+      if (active === 3) ready.resolve();
+      await ready.promise;
+      active--;
+      return {path: 'fixture.mp4', extension: '.mp4'};
+    },
+  });
+  result.apply(data);
+  assert.equal(peak, 3);
+  assert.equal(result.linkedCount, 4);
   assert.deepEqual(failures, []);
 });

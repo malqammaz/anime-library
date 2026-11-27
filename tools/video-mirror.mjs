@@ -10,6 +10,7 @@ import {numberOf, pageKey} from './library-merge.mjs';
 const exec = promisify(execFile);
 const tag = 'episode-videos';
 const linkType = 'github-video';
+const parallelVideos = 3;
 const videoExtensions = new Set(['.mp4', '.mkv', '.webm', '.mov', '.m4v', '.avi']);
 const assetPattern = /^(episode-[a-f0-9]{64})\.(?:mp4|mkv|webm|mov|m4v|avi)$/;
 
@@ -67,6 +68,7 @@ export function releaseStorage(repository, token) {
     return response.status === 204 ? null : response.json();
   }
   let release;
+  let creatingRelease;
   return {
     async list() {
       release = await request(`/releases/tags/${tag}`, {allowMissing: true});
@@ -79,9 +81,12 @@ export function releaseStorage(repository, token) {
       }
     },
     async upload(name, file, deadline) {
-      release ??= await request('/releases', {method: 'POST', body: {
-        tag_name: tag, target_commitish: 'main', name: 'Latest episode videos', prerelease: true, make_latest: 'false',
-      }});
+      if (!release) {
+        creatingRelease ??= request('/releases', {method: 'POST', body: {
+          tag_name: tag, target_commitish: 'main', name: 'Latest episode videos', prerelease: true, make_latest: 'false',
+        }}).then(created => { release = created; }).finally(() => { creatingRelease = undefined; });
+        await creatingRelease;
+      }
       const body = await openAsBlob(file);
       return request(`/releases/${release.id}/assets?name=${encodeURIComponent(name)}`, {
         method: 'POST', body, upload: true, timeout: Math.min(5 * 60 * 1000, Math.max(1, deadline - Date.now())),
@@ -93,7 +98,9 @@ export function releaseStorage(repository, token) {
   };
 }
 
-export async function prepareVideos(library, {storage, deadline, failures, download = downloadMega}) {
+export async function prepareVideos(library, {storage, deadline, failures, download = downloadMega, log = console.log}) {
+  const episodes = latestEpisodes(library);
+  log(`[Video mirror] Checking existing GitHub assets for ${episodes.size} episodes`);
   const assets = await storage.list();
   const available = new Map();
   for (const asset of assets) {
@@ -101,33 +108,54 @@ export async function prepareVideos(library, {storage, deadline, failures, downl
     if (match && asset.state === 'uploaded' && asset.size > 0) available.set(match[1], asset);
   }
 
-  for (const [key, {show, episode}] of latestEpisodes(library)) {
-    if (available.has(key)) continue;
-    if (Date.now() >= deadline) {
-      failures.push({error: 'Video mirror time limit reached; remaining episodes will be retried'});
-      break;
+  async function processEpisode([key, {show, episode}], position) {
+    const title = String(show.title ?? show.animeUrl).replace(/[\r\n]/g, ' ');
+    const progress = message => log(`[Video ${position}/${episodes.size}] ${title}, episode ${episode.number}: ${message}`);
+    if (available.has(key)) {
+      progress('Already on GitHub, skipping download');
+      return;
     }
     const url = episode.links.map(link => megaLink(link.url)).find(Boolean);
     if (!url) {
+      progress('Skipped because no supported MEGA file link was found');
       failures.push({title: show.title, episode: episode.number, error: 'No supported MEGA file link'});
-      continue;
+      return;
     }
-    const directory = await mkdtemp(join(tmpdir(), 'anime-video-'));
+    let directory;
     try {
+      directory = await mkdtemp(join(tmpdir(), 'anime-video-'));
+      progress('Downloading from MEGA');
       const {path, extension} = await download(url, directory, deadline);
       const name = key + extension;
       for (const asset of assets.filter(asset => asset.name === name && asset.state === 'starter')) {
         await storage.remove(asset.id);
       }
+      progress('Uploading to GitHub Releases');
       const asset = await storage.upload(name, path, deadline);
       if (asset.state !== 'uploaded' || !asset.browser_download_url || !asset.size) throw new Error('GitHub did not confirm the upload');
       available.set(key, asset);
       assets.push(asset);
+      progress('Upload complete');
     } catch (error) {
+      progress(`Failed: ${String(error.message).replace(/[\r\n]/g, ' ')}`);
       failures.push({title: show.title, episode: episode.number, error: error.message});
     } finally {
-      await rm(directory, {recursive: true, force: true});
+      if (directory) await rm(directory, {recursive: true, force: true});
     }
+  }
+
+  const queue = [...episodes];
+  let position = 0;
+  async function worker() {
+    while (position < queue.length && Date.now() < deadline) {
+      const index = position++;
+      await processEpisode(queue[index], index + 1);
+    }
+  }
+  await Promise.all(Array.from({length: Math.min(parallelVideos, queue.length)}, worker));
+  if (position < queue.length) {
+    log(`[Video mirror] Time limit reached with ${queue.length - position} episodes remaining`);
+    failures.push({error: 'Video mirror time limit reached; remaining episodes will be retried'});
   }
 
   let linkedAssets = new Set();

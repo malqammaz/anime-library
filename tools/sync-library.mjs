@@ -152,8 +152,10 @@ export async function main() {
       failures.push({error: `Video mirror failed: ${error.message}`});
     }
   }
+  if (videos) console.log('[Video mirror] Saving video links to library.json');
   const saved = dryRun ? {dryRun: true, ...merged.counts} : await saveCollected(collected, request, videos?.apply);
   await videos?.prune();
+  if (videos) console.log(`[Video mirror] Finished with ${videos.linkedCount} video links`);
   const report = {saved, extracted: collected.length, ...(videos && {videoLinks: videos.linkedCount}), failures, skipped};
   await writeFile('sync-report.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));
